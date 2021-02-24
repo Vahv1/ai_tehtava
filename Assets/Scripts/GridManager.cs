@@ -3,9 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Generoi pelikentän ja asettaa pelaajien lähtöpaikat
+// Pitää tallessa tietoa pelikentän ruutujen tilasta
 public class GridManager : MonoBehaviour
 {
-    public int[,] grid;
+    public int[,] grid; // Pelikentän ruudukko
     public GameObject playerParent;
     int vertical, horizontal, columns, rows;
     public GameObject wall;
@@ -14,7 +16,8 @@ public class GridManager : MonoBehaviour
     void Start()
     {
         vertical = (int)Camera.main.orthographicSize;
-        horizontal = vertical * (Screen.width / Screen.height);
+        //Nää vois tehä helpommin jos vaan laitettas kenttä aina vaikka neliön muotoseks
+        horizontal = vertical * (Screen.width / Screen.height); 
         rows = vertical * 2;
         columns = horizontal * 2;
         grid = new int[columns, rows];
