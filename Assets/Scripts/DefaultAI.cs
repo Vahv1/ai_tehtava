@@ -12,7 +12,7 @@ public class DefaultAI : PlayerControllerInterface
         }
         else
         {
-            nextMove = Hit;
+            nextMove = Pass;
         }
     }
 }

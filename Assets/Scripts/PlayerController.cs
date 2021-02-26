@@ -118,7 +118,11 @@ public class PlayerController : MonoBehaviour
         List<Vector2> enemyPositions = new List<Vector2>();
         foreach (GameObject enemy in turnManager.players)
         {
-            enemyPositions.Add(enemy.transform.position);
+            // Ei lis‰‰ pelaajaa itse‰‰n listaan
+            if ((Vector2)enemy.transform.position != GetPosition())
+            {
+                enemyPositions.Add(enemy.transform.position);
+            }
         }
         return enemyPositions.ToArray();
     }

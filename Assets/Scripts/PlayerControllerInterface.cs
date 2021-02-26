@@ -52,7 +52,7 @@ public class PlayerControllerInterface : MonoBehaviour
         playerController.Pass();
     }
 
-    // Antaa maailmasijainnista tiedon onko pelaajan edessä olevassa ruudussa tyhjä, seinä vai pelaaja
+    // Antaa tiedon onko pelaajan edessä olevassa ruudussa tyhjä, seinä vai pelaaja
     // 0 = tyhjä, 1 = seinä, 2 = pelaaja
     public int GetForwardTileStatus()
     {
