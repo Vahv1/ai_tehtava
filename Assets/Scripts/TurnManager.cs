@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
+using System;
 
 // Hoitaa pelaajien siirtojen toteutuksen oikeaan aikaan ja ilmoittaa pelaajille kun vuoro on p‰‰ttynyt
 // Miten pit‰isi p‰‰tt‰‰ kuka pelaaja toteuttaa siirron ekana?
-
 public class TurnManager : MonoBehaviour
 {
     // Delegaatti, jolla pelaajascriptit saa tiet‰‰ millon vuoro on p‰‰ttynyt
@@ -15,12 +16,13 @@ public class TurnManager : MonoBehaviour
     public float nextMoveTime;
 
     // Taulukko johon tallennetaan kaikki pelaajaobjektit
-    public GameObject[] players;
+    //public GameObject[] players;
+    public List<GameObject> players = new List<GameObject>();
 
     private void Start()
     {
         nextMoveTime = turnDuration; // Aloitetaan eka vuoro vasta yhden vuoron keston j‰lkeen
-        players = GameObject.FindGameObjectsWithTag("Player");
+        players.AddRange(GameObject.FindGameObjectsWithTag("Player"));
     }
 
     void Update()
@@ -40,12 +42,20 @@ public class TurnManager : MonoBehaviour
         // Suorita kaikkien pelaajien p‰‰tt‰m‰ seuraava siirto
         foreach (GameObject player in players)
         {
-            //Parempi ois ottaa skriptit listaan heti alussa eik‰ aina GetComponentilla t‰ss‰
-            player.GetComponent<PlayerController>().nextMove();
+            try
+            {
+                player.GetComponent<PlayerControllerInterface>().nextMove();
+            }
+            catch
+            {
+                Debug.Log("Seuraavaa siirtoa ei ole asetettu " + player.gameObject.name);
+            }
         }
 
-        Debug.Log("Vuoro p‰‰ttyi ajassa: " + Time.time +
-            ". Seuraava vuoro suoritetaan ajassa: " + nextMoveTime);
+        // Vaihdetaan randomilla pelaajalistan j‰rjestyst‰ (vuoroj‰rjestys)
+        System.Random rnd = new System.Random();
+        players = players.OrderBy(a => rnd.Next()).ToList();
+
         turnEndDelegate();
     }
 }
