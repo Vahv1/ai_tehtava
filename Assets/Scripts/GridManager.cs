@@ -35,7 +35,7 @@ public class GridManager : MonoBehaviour
                 // muualle randomilla
                 else
                 {
-                    int rnd = UnityEngine.Random.Range(0, 100); // millä mahiksella tulee seinä
+                    int rnd = UnityEngine.Random.Range(0, 7); // millä mahiksella tulee seinä
                     grid[i, j] = rnd == 1 ? 1 : 0;
                 }
 

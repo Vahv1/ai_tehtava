@@ -137,7 +137,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (18)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -249,7 +249,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (2)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -337,7 +337,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (19)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -398,7 +398,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (11)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -480,6 +480,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerParent: {fileID: 75064385}
+  size: 0
+  columns: 0
+  rows: 0
   wall: {fileID: 2733969968468877523, guid: ff29eba2e49e978479f30c7d662d9e42, type: 3}
 --- !u!4 &338131852
 Transform:
@@ -504,7 +507,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (14)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -570,7 +573,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (1)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -640,7 +643,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (9)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -784,7 +787,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player
+      value: MinunBotti
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -859,7 +862,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (17)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -920,7 +923,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (4)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -986,7 +989,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (7)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -1047,7 +1050,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (8)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -1169,7 +1172,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (16)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -1235,7 +1238,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (12)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -1301,7 +1304,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (13)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -1372,7 +1375,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (6)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -1433,7 +1436,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (5)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -1519,7 +1522,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (15)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -1585,7 +1588,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (10)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -1646,7 +1649,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (20)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
@@ -1712,7 +1715,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_Name
-      value: player (3)
+      value: EnemyBot
       objectReference: {fileID: 0}
     - target: {fileID: 2533513964323592141, guid: c080ec461a4fa4a40bdbe0a29251839b, type: 3}
       propertyPath: m_IsActive
