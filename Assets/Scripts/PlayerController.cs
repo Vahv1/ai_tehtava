@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class PlayerController : MonoBehaviour
 {
     public GridManager gridManager;
@@ -84,7 +83,7 @@ public class PlayerController : MonoBehaviour
     // Älä tee mitään
     public void Pass()
     {
-        Debug.Log("Skipattiin vuoro");
+        //Debug.Log("Skipattiin vuoro");
     }
 
     // Antaa maailmasijainnista tiedon onko pelaajan edessä olevassa ruudussa tyhjä, seinä vai pelaaja
@@ -194,7 +193,7 @@ public class PlayerController : MonoBehaviour
     private int GetPositionStatus(Vector2 worldPos)
     {
         int[] gridPos = WorldPosToGridPos(worldPos);
-        int positionStatus = gridManager.grid[gridPos[0], gridPos[1]];
+        int positionStatus = (int)gridManager.grid[gridPos[0], gridPos[1]];
         return positionStatus;
     }
 
