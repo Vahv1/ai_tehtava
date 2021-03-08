@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class PlayerControllerInterface : MonoBehaviour
 {
-    private PlayerController playerController;
+    public PlayerController playerController;
 
     // nextMoveen tallennetaan metodi joka halutaan suorittaa seuraavalla vuorolla
     public delegate void NextMove();
     public NextMove nextMove;
-
-    private void Start()
-    {
-        playerController = GetComponent<PlayerController>();
-    }
 
     // Tämä metodi ylikirjoitetaan omassa skriptissä
     public virtual void DecideNextMove()

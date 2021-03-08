@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class ScoreboardManager : MonoBehaviour
 {
-    public Font font;
     public TurnManager turnManager;
 
     void Start()
@@ -24,10 +23,5 @@ public class ScoreboardManager : MonoBehaviour
             i++;
         }
 
-    }
-
-    void Update()
-    {
-        
     }
 }

@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour
     {
         gridManager = GameObject.Find("GridManager").GetComponent<GridManager>();
         turnManager = GameObject.Find("TurnManager").GetComponent<TurnManager>();
-        playerControllerInterface = GetComponent<PlayerControllerInterface>();
 
         // P‰‰tet‰‰n seuraava siirto aina kun TurnManager ilmoittaa vuoron p‰‰ttyneen
         TurnManager.turnEndDelegate += playerControllerInterface.DecideNextMove;
