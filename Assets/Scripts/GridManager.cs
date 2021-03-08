@@ -19,6 +19,8 @@ public class GridManager : MonoBehaviour
     public List<pf.Point> polku; // tallentaa polun kahden ruudun välillä
     pf.Point alwaysEmpty = new pf.Point(2, 2); // Piste joka jätetään tyhjäksi aina
 
+    public int emptySpaceFrequency = 7; // Esim. 7 --> seinä tulee ruutuun 1/7 tod.näk.
+
     void Awake()
     {
         size = (int)Camera.main.orthographicSize;
@@ -58,7 +60,7 @@ public class GridManager : MonoBehaviour
                 // muualle randomilla
                 else
                 {
-                    int rnd = UnityEngine.Random.Range(0, 7); // millä mahiksella tulee seinä
+                    int rnd = UnityEngine.Random.Range(0, emptySpaceFrequency); // millä mahiksella tulee seinä
                     grid[i, j] = rnd == 1 ? 1 : 0;
                 }
 

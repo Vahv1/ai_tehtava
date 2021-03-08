@@ -13,13 +13,13 @@ public class TurnManager : MonoBehaviour
     public static TurnEndDelegate turnEndDelegate;
 
     public float turnDuration = 3f;
+    public int killLimit = 40;
     public float nextMoveTime;
 
     // Taulukko johon tallennetaan kaikki pelaajaobjektit
-    //public GameObject[] players;
     public List<GameObject> players = new List<GameObject>();
 
-    private void Start()
+    private void Awake()
     {
         nextMoveTime = turnDuration; // Aloitetaan eka vuoro vasta yhden vuoron keston jälkeen
         players.AddRange(GameObject.FindGameObjectsWithTag("Player"));
@@ -31,6 +31,13 @@ public class TurnManager : MonoBehaviour
         if (nextMoveTime <= Time.time)
         {
             ExecuteTurn();
+        }
+
+        // Pause-toiminto pelille, pitäs olla oikeesti jossain toisessa skriptissä tietenkin
+        if (Input.GetButtonDown("Jump"))
+        {
+            Time.timeScale = 1 - Time.timeScale; // 0 --> 1 ja 1 --> 0
+            Debug.Log("PAUSED");
         }
     }
 
@@ -48,7 +55,7 @@ public class TurnManager : MonoBehaviour
             }
             catch
             {
-                Debug.Log("Seuraavaa siirtoa ei ole asetettu " + player.gameObject.name);
+                //Debug.Log("Seuraavaa siirtoa ei ole asetettu " + player.gameObject.name);
             }
         }
 
